@@ -66,7 +66,7 @@ const AuthProvider = ({children}) => {
         handleSignOut,
     };
     return (
-        <AuthContext.Provider value={authInfo}></AuthContext.Provider>
+        <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
     );
 };
 export default AuthProvider;
