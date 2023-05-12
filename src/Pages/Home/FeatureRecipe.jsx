@@ -2,7 +2,7 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import chicken from "/kungfaoChicken.jpg";
 
-const FeaturedRecipe = () => {
+const FeatureRecipe = () => {
   return (
     <div>
       <h2 className="font-bold text-center my-10 lg:my-16 text-4xl lg:text-5xl">
@@ -34,4 +34,4 @@ const FeaturedRecipe = () => {
   );
 };
 
-export default FeaturedRecipe;
+export default FeatureRecipe;

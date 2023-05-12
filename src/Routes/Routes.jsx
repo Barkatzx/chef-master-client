@@ -3,11 +3,11 @@ import Main from "../Layouts/MAin";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Contact from "../Pages/Contact/Contact";
-import Blogs from "../Pages/Blogs/Blogs";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import RecipeDetailsLayout from "../Layouts/RecipeDetailsLayout";
 import RecipeDetails from "../Pages/RecipeDetails/RecipeDetails";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blogs />,
+        element: <Blogs/>,
       },
       {
         path: "/login",
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
         element: <RecipeDetails/>,
         loader: ({ params }) =>
           fetch(
-            `https://chef-master-auth-server-84mzfwack-barkatzx.vercel.app/${params.id}`
+            `https://chef-master-auth-server-barkatzx.vercel.app/${params.id}`
           ),
       },
     ],

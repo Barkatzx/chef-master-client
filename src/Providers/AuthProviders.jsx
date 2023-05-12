@@ -52,14 +52,14 @@ const AuthProviders = ({ children }) => {
     };
 
     useEffect (() => {
-        fetch("https://chef-master-auth-server-84mzfwack-barkatzx.vercel.app/")
+        fetch("https://chef-master-auth-server-barkatzx.vercel.app/")
         .then((res) => res.json())
         .then((data) => setchefInfo(data))
         .catch((err) => console.log(err));
     }, []);
 
     useEffect (() => {
-        fetch("https://chef-master-auth-server-84mzfwack-barkatzx.vercel.app/recipes")
+        fetch("https://chef-master-auth-server-barkatzx.vercel.app/recipes")
         .then((res) => res.json())
         .then((data) => setRecipeData(data))
         .catch((err) => console.log(err));

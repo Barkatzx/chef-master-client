@@ -5,7 +5,7 @@ import { AuthContext } from "../../Providers/AuthProviders";
 
 const ChefInfo = () => {
   const allChefInfos = useContext(AuthContext);
-  const chefInfos = allChefInfos.chefInfo;
+  const chefInfos = allChefInfos?.chefInfo; 
   const { id } = useParams();
   const singleChefData = useLoaderData();
 
@@ -16,10 +16,9 @@ const ChefInfo = () => {
       </h2>
 
       <div className="grid px-2 lg:px-10 gap-8 container mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {chefInfos &&
-          chefInfos.map((chefInfo) => (
-            <ChefInfoCard key={chefInfo.chefId} value={chefInfo}></ChefInfoCard>
-          ))}
+        {chefInfos && chefInfos.map((chefInfo) => (
+          <ChefInfoCard key={chefInfo.chefId} value={chefInfo}></ChefInfoCard>
+        ))}
       </div>
     </div>
   );
