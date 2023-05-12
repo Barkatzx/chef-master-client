@@ -7,7 +7,7 @@ import Blogs from "../Pages/Blogs/Blogs";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import RecipeDetailsLayout from "../Layouts/RecipeDetailsLayout";
-import RecipeDetails from "../Pages/RecipeDetails/RecipeDetails"
+import RecipeDetails from "../Pages/RecipeDetails/RecipeDetails";
 
 const router = createBrowserRouter([
   {
