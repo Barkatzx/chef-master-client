@@ -37,7 +37,7 @@ const RecipeDetailsCard = (props) => {
             onClick={() => {
               handleDisabled(), notify();
             }}
-            className={`btn border-none bg-green-600 ${
+            className={`btn border-none bg-pink-600 ${
               disabled ? "btn-disabled" : "btn-active"
             }`}
           >

@@ -25,7 +25,7 @@ const ChefBanner = (props) => {
           />
         </LazyLoad>
         <div className="lg:w-1/2 ">
-          <h2 className="text-green-500 text-4xl lg:text-6xl leading-tight tracking-tighter font-bold">
+          <h2 className="text-pink-500 text-4xl lg:text-6xl leading-tight tracking-tighter font-bold">
             {name}
             <div className="badge bg-amber-500 ms-4">
               {" "}

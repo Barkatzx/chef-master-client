@@ -22,7 +22,7 @@ const Testimonials = () => {
           </div>
           <figure className="max-w-screen-md mx-auto">
             <svg
-              className="h-12 mx-auto mb-3 text-green-500"
+              className="h-12 mx-auto mb-3 text-pink-500"
               viewBox="0 0 24 27"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +47,10 @@ const Testimonials = () => {
               />
               <div className="flex items-center divide-x-2 divide-white">
                 <div className="pr-3 font-medium text-white dark:text-white">
-                  Micheal Dre
+                  Arafat Jalak
                 </div>
                 <div className="pl-3 text-sm font-light text-white">
-                  CEO at Grashhopper
+                  CEO at Google
                 </div>
               </div>
             </figcaption>

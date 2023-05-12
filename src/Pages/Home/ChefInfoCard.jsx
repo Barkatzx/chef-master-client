@@ -47,7 +47,7 @@ const ChefInfoCard = (props) => {
             </button>
           </div>
           <Link to={`/recipes/${chefId}`} state={chefData}>
-            <button className="bg-green-500 text-white px-6 py-2 mt-8 rounded-md">
+            <button className="bg-pink-500 text-white px-6 py-2 mt-8 rounded-md">
               View Recipes{" "}
               <FaLongArrowAltRight className="inline-block text-white duration-150 hover:transition-all hover:translate-x-1"></FaLongArrowAltRight>{" "}
             </button>
