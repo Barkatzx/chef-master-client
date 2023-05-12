@@ -6,7 +6,7 @@ import Contact from "../Pages/Contact/Contact";
 import Blogs from "../Pages/Blogs/Blogs";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import RecipeDetails from "../Layouts/RecipeDetails";
+import RecipeDetails from "../Layouts/RecipeDetailsLayout";
 
 const router = createBrowserRouter([
   {
