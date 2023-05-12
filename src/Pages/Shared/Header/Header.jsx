@@ -14,7 +14,7 @@ const Header = () => {
   };
   return (
     <div>
-      <div className="navbar shadow-md bg-black lg:px-10 py-5 text-white">
+      <div className="navbar shadow-xl bg-slate-500 lg:px-10 py-5 text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,40 +38,40 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
               <li>
-                <ActiveLink className="hover:bg-green-400" to="/">
+                <ActiveLink className="hover:bg-pink-400" to="/">
                   Home
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink className="hover:bg-green-400" to="/contact">
+                <ActiveLink className="hover:bg-pink-400" to="/contact">
                   Contact
                 </ActiveLink>
               </li>
               <li>
-                <ActiveLink className="hover:bg-green-400" to="/blog">
+                <ActiveLink className="hover:bg-pink-400" to="/blog">
                   Blog
                 </ActiveLink>
               </li>
             </ul>
           </div>
           <p className="font-bold text-2xl lg:text-4xl">
-            Chef<span className="text-green-500">Info</span>
+            Chef<span className="text-pink-500">Info</span>
           </p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <ActiveLink className="hover:bg-green-400" to="/">
+              <ActiveLink className="hover:bg-pink-400" to="/">
                 Home
               </ActiveLink>
             </li>
             <li>
-              <ActiveLink className="hover:bg-green-400" to="/contact">
+              <ActiveLink className="hover:bg-pink-400" to="/contact">
                 Contact
               </ActiveLink>
             </li>
             <li>
-              <ActiveLink className="hover:bg-green-400" to="/blog">
+              <ActiveLink className="hover:bg-pink-400" to="/blog">
                 Blog
               </ActiveLink>
             </li>
@@ -80,14 +80,14 @@ const Header = () => {
         <div className="navbar-end flex gap-4 mr-4">
           {user ? (
             <button
-              className="hover:bg-green-400 lg:px-4 py-3 rounded-lg"
+              className="hover:bg-pink-400 lg:px-4 py-3 rounded-lg"
               onClick={handleSignOut}
             >
               Sign Out
             </button>
           ) : (
             <Link
-              className="hover:bg-green-400 lg:px-4 py-3 rounded-lg"
+              className="hover:bg-pink-400 lg:px-4 py-3 rounded-lg"
               to="/login"
             >
               Login{" "}
