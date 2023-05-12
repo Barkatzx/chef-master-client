@@ -1,10 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const ActiveLink = () => {
+const ActiveLink = ({ to, children }) => {
     return (
-        <div>
-            
-        </div>
+        <NavLink to={to}
+        className={({ isActive }) =>
+        (isActive ? "active-style" : "")}>{children}
+        </NavLink>
     );
 };
 

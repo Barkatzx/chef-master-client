@@ -12,8 +12,8 @@ import {
 import app from '../firebase/firebase.config';
 
 
-const googleAuthProvider = new GooleAuthProvider();
-const gitHubAuthProvider = neew GitHubAuthProvider();
+const googleAuthProvider = new GoogleAuthProvider();
+const gitHubAuthProvider = new GithubAuthProvider();
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
