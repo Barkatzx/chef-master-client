@@ -6,7 +6,8 @@ import Contact from "../Pages/Contact/Contact";
 import Blogs from "../Pages/Blogs/Blogs";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import RecipeDetails from "../Layouts/RecipeDetailsLayout";
+import RecipeDetailsLayout from "../Layouts/RecipeDetailsLayout";
+import RecipeDetails from "../Pages/RecipeDetails/RecipeDetails"
 
 const router = createBrowserRouter([
   {
@@ -38,9 +39,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/recipes/:id",
-    element: <RecipeDetails />,
+    element: <RecipeDetailsLayout/>,
     children: [
       {
+        path: "/recipes/:id",
+        element: <RecipeDetails/>,
         loader: ({ params }) =>
           fetch(
             `https://chef-master-auth-server-84mzfwack-barkatzx.vercel.app/${params.id}`

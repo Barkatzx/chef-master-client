@@ -24,7 +24,7 @@ const AuthProviders = ({ children }) => {
     const [recipeData, setRecipeData] = useState([]);
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    console.log(user);
+    // console.log(user);
 
     const createUser = (email, password) => {
         setLoading(true);
@@ -69,7 +69,7 @@ const AuthProviders = ({ children }) => {
         const unsubscribe =
         onAuthStateChanged(auth, (loggedUser) => {
             setUser(loggedUser);
-            console.log(loggedUser);
+            // console.log(loggedUser);
             setLoading(false);
         });
         return () => {
