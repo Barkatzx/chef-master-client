@@ -20,7 +20,7 @@ Icon -> [React Icons](https://react-icons.github.io/react-icons)
 
 
 ## Live Link
-Hosted in Firebase -> 
+Hosted in Firebase ->  https://chef-master-auth-firebase.web.app/
 
 ## Server side Repo:
 Repo Link -> https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-Barkatzx
