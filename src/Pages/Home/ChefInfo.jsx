@@ -1,13 +1,9 @@
 import React, { useContext } from "react";
-import ChefInfoCard from "./ChefInfoCard";
 import { useLoaderData, useParams } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProviders";
+import ChefInfoCard from "./ChefInfoCard"
 
 const ChefInfo = () => {
-  const allChefInfos = useContext(AuthContext);
-  const chefInfos = allChefInfos?.chefInfo; 
-  const { id } = useParams();
-  const singleChefData = useLoaderData();
+  const { chefs } = useLoaderData()
 
   return (
     <div>
@@ -16,8 +12,9 @@ const ChefInfo = () => {
       </h2>
 
       <div className="grid px-2 lg:px-10 gap-8 container mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {chefInfos && chefInfos.map((chefInfo) => (
-          <ChefInfoCard key={chefInfo.chefId} value={chefInfo}></ChefInfoCard>
+        {chefs.map((chef) => (
+          <ChefInfoCard key= {chef.chefId} chef= {chef}>
+          </ChefInfoCard>
         ))}
       </div>
     </div>

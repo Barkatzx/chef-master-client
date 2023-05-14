@@ -18,6 +18,20 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        loader: async () => {
+          try {
+            const chefsData = await fetch
+          ('https://chef-master-auth-server-barkatzx.vercel.app/');
+          const chefs = await
+          chefsData.json();
+
+          return {
+            chefs: chefs,
+          };
+          } catch (err) {
+            console.log(err);
+          }
+        }
       },
       {
         path: "/contact",

@@ -2,12 +2,10 @@ import React from "react";
 import pasta from "/pasta_banner.jpg";
 import { FaThumbsUp } from "react-icons/fa";
 
-const ChefBanner = (props) => {
-  const singleChefData = props?.value;
+const ChefBanner = (chef) => {
+  const singleChefData = chef?.value;
   const { bio, chefId, likes, name, numOfRecipes, picture, yearOfExp } =
     singleChefData;
-
-  // console.log(singleChefData);
 
   return (
     <div
@@ -18,16 +16,14 @@ const ChefBanner = (props) => {
       className="bg-cover bg-center min-h-screen text-white rounded-xl mb-16"
     >
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-10 w-full container px-2 lg:px-4 mx-auto py-16 items-center">
-        <LazyLoad className="mx-auto">
           <img
             src={picture}
             className="rounded-lg object-cover w-[350px] lg:w-[500px] h-[400px] lg:h-[650px]"
           />
-        </LazyLoad>
         <div className="lg:w-1/2 ">
-          <h2 className="text-pink-500 text-4xl lg:text-6xl leading-tight tracking-tighter font-bold">
+          <h2 className="text-pink-100 text-4xl lg:text-6xl leading-tight tracking-tighter font-bold">
             {name}
-            <div className="badge bg-amber-500 ms-4">
+            <div className="badge bg-pink-500 ms-4">
               {" "}
               <div className="flex items-center p-2 w-full text-black">
                 <FaThumbsUp className="mr-2"></FaThumbsUp>{" "}
@@ -37,7 +33,7 @@ const ChefBanner = (props) => {
           </h2>
           <p className="text-white py-7">
             {" "}
-            <span className="text-amber-500 font-bold">Bio:</span> {bio}
+            <span className="text-pink-500 font-bold">Bio:</span> {bio}
           </p>
           <button
             type="button"

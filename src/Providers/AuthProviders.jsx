@@ -20,7 +20,7 @@ export const AuthContext = createContext(null);
 const auth = getAuth(app);
 
 const AuthProviders = ({ children }) => {
-    const [ChefInfo, setchefInfo] = useState([]);
+    // const [ChefInfo, setchefInfo] = useState([]);
     const [recipeData, setRecipeData] = useState([]);
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -51,12 +51,12 @@ const AuthProviders = ({ children }) => {
         return signOut(auth);
     };
 
-    useEffect (() => {
-        fetch("https://chef-master-auth-server-barkatzx.vercel.app/")
-        .then((res) => res.json())
-        .then((data) => setchefInfo(data))
-        .catch((err) => console.log(err));
-    }, []);
+    // useEffect (() => {
+    //     fetch("https://chef-master-auth-server-barkatzx.vercel.app/")
+    //     .then((res) => res.json())
+    //     .then((data) => setchefInfo(data))
+    //     .catch((err) => console.log(err));
+    // }, []);
 
     useEffect (() => {
         fetch("https://chef-master-auth-server-barkatzx.vercel.app/recipes")
@@ -79,7 +79,7 @@ const AuthProviders = ({ children }) => {
 
     const authInfo = {
         user,
-        ChefInfo,
+        // ChefInfo,
         recipeData,
         loading,
         createUser,
