@@ -1,18 +1,28 @@
 import React, { useRef } from "react";
 import { FaDownload } from "react-icons/fa";
+import html2pdf from "html2pdf.js";
 import { useLoaderData } from "react-router-dom";
+
 const Blog = () => {
-  const ref = useRef();
-  const options = {
-    orientation: "landscape",
-    unit: "in",
-    format: [17, 11],
+  const contentRef = useRef();
+
+  const handleDownload = () => {
+    const content = contentRef.current;
+    const options = {
+      orientation: "landscape",
+      unit: "in",
+      format: [17, 11],
+    };
+    html2pdf().set(options).from(content).save();
   };
 
-  return (
+  return ( 
     <div>
-      <div ref={ref}>
-        <div className="mt-12 mx-10 text-orange-400 border-2 bg-orange-50  border-orange-400 rounded p-5">
+      <button className="text-2xl font-bold bg-pink-500 rounded-xl mt-10 text-end p-4 text-white" onClick={handleDownload}>
+        <FaDownload /> Download as PDF
+      </button>
+      <div ref={contentRef}>
+        <div className="mt-12 mx-10 text-pink-400 border-2 bg-orange-50  border-pink-400 rounded p-5">
           <div>
             <h3 className="text-3xl font-semibold p-3">
               Q: Tell us the differences between uncontrolled and controlled
