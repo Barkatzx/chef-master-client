@@ -37,7 +37,7 @@ const ChefBanner = (chef) => {
           </p>
           <button
             type="button"
-            className="border-2  border-amber-500  text-white px-6 py-1  leading-none flex items-center rounded-lg mb-8"
+            className="border-2  border-pink-500  text-white px-6 py-1  leading-none flex items-center rounded-lg mb-8"
           >
             Years of Experience:{" "}
             <span className="p-1 rounded text-white font-semibold ml-2">
@@ -47,7 +47,7 @@ const ChefBanner = (chef) => {
           </button>
           <button
             type="button"
-            className="border-2  border-amber-500  text-white px-6 py-1 leading-none flex items-center rounded-lg"
+            className="border-2  border-pink-500  text-white px-6 py-1 leading-none flex items-center rounded-lg"
           >
             Number Of Recipes:{" "}
             <span className="p-1 rounded text-white font-semibold ml-2">
