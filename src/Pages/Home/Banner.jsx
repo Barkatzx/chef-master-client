@@ -12,6 +12,7 @@ import chicken from "/kungfaoChicken.jpg";
 import pancake from "/scallionPancakes.jpg";
 import broccoli from "/beefandbroccoli.jpg";
 import tofu from "/mapoTofu.jpg";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -35,9 +36,11 @@ const Banner = () => {
             homemade soup, food has the power to bring us together and uplift
             our spirits.
           </p>
+          <Link to={"/contact"}>
           <button className="bg-pink-600 px-6 py-2 rounded-md hover:bg-pink-400">
             Contact Us
           </button>
+          </Link>
         </div>
         <div className="w-full px-2 lg:px-0 lg:w-3/5 pb-6">
           <Swiper
